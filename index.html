@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="images/LAYLogo.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
   </head>
@@ -29,8 +29,9 @@
     <nav
       class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex item-center justify-between z-50"
     >
-    
+    <a href="#">
       <img
+
         src="images/LAYLogo.png"
         alt="logo"
         style="height: 90px; border-radius: 100px ;  box-shadow: 1px 1px 3px black;"
@@ -44,7 +45,7 @@
         style="height: 90px; margin-top: 20px; border-radius: 100px; box-shadow: 1px 1px 3px white;"
         class="w-40 mt-3 cursor-pointer mr-14 hidden dark:block"
       />
-    
+    </a>
       <ul
         class="hidden mt-3 md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 dark:bg-transparent"
       >
@@ -181,7 +182,7 @@
                 Technology
               </h3>
               <p class="text-gray-600 text-sm dark:text-white/80">
-                HTML ,CSS ,Javascript ,Boostrap ,Tailwind ,jQuery ,React.js ,Angular , Express.js , Node.js , MongoDb
+                HTML , CSS , Javascript , Typescript , Boostrap , Tailwind , jQuery , React.js , Angular , Express.js , Node.js , MongoDB , VS Code , Git , Github
               </p>
             </li>
 
@@ -210,6 +211,7 @@
             <li
               class="border-[0.5px] border-grey-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
             >
+            <a href="#work">
               <img
                 src="images/project-icon.png"
                 class="w-7 mt-3 dark:hidden"
@@ -220,6 +222,8 @@
                 class="w-7 mt-3 hidden dark:block"
                 alt=""
               />
+              
+
 
               <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
                 Projects
@@ -227,28 +231,37 @@
               <p class="text-gray-600 text-sm dark:text-white/80">
                 Build multiple projects
               </p>
+            </a>
             </li>
           </ul>
 
           <h4 class="my-6 text-grey-700 font-Ovo dark:text-white/80">
-            Tools i used
+            My Socials
           </h4>
 
           <ul class="flex items-center gap-3 sm:gap-5">
             <li
               class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
             >
-              <img src="images/vscode.png" class="w-5 sm:w-7" alt="" />
+            <a href="https://github.com/aartiyarole">
+              <i class="fa-brands fa-github"></i>
+            </a>
             </li>
-
-            
-
-           
             <li
               class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
             >
-              <img src="images/git.png" class="w-5 sm:w-7" alt="" />
+            <a href="https://www.linkedin.com/in/aartiyarole">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
             </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+            <a href="https://x.com/aartiyarole">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -293,7 +306,7 @@
 
       
          <div
-          class="aspect-square bg-[url('./images/movie-website.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/movie-website.png')] bg-no-repeat bg-contain bg-center rounded-lg relative cursor-pointer group"
         >
         <a href="https://moviedramasite.netlify.app/">
           <div
@@ -314,7 +327,7 @@
 
         <!-- 3 -->
         <div
-          class="aspect-square bg-[url('./images/aesthetic-archive-project.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+          class="aspect-square bg-[url('./images/aesthetic-archive-project.png')] bg-no-repeat bg-contain bg-center rounded-lg relative cursor-pointer group"
         >
         <a href="https://aesthetic-archive.netlify.app/">
           <div
@@ -336,7 +349,7 @@
 
         
       </div>
-      <a
+      <!-- <a
         class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:text-white dark:border-white dark:hover-[#2a004a]"
         href="#"
       >
@@ -346,7 +359,7 @@
           src="images/right-arrow-bold-dark.png"
           class="w-4 hidden dark:block"
         />
-      </a>
+      </a> -->
     </div>
 
     <!-------------- Contact------------ -->
@@ -361,6 +374,22 @@
         feedback, Please use the form below
       </p>
       <form action="" class="max-w-2xl mx-auto">
+                    <!-- Success Toast -->
+          <div id="toast-success" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800" role="alert">
+            <svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/>
+            </svg>
+            <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+          </div>
+
+          <!-- Error Toast -->
+          <div id="toast-error" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-red-100 divide-x divide-red-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-red-800" role="alert">
+            <svg class="w-5 h-5 text-red-600 dark:text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17l8 2L9 1 1 19l8-2Zm0 0V9"/>
+            </svg>
+            <div class="ps-4 text-sm font-normal">Failed to send message. Please try again.</div>
+          </div>
+
         <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             name="your_name" 
@@ -424,7 +453,6 @@
           <li>
             <a href="https://www.linkedin.com/in/aartiyarole">LinkedIn</a>
           </li>
-          <li><a href="https://instagram.com/aartiyarole">Instagram</a></li>
           <li><a href="https://x.com/aartiyarole">Twitter</a></li>
         </ul>
       </div>

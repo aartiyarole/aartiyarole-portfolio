@@ -17,17 +17,29 @@
         // Send email using EmailJS
         emailjs.send("service_p26w2ce", "template_qvopfm4", formData)
         .then(function(response) {
-            alert("Message sent successfully!");
+            showToast("toast-success");
+            
            
-        }, function(error) {
-            alert("Failed to send message. Please try again.");
+        })
+        .catch(function(error) {
+            showToast("toast-error");
             
         });
 
         // Optionally, clear the form fields after submission
         document.querySelector("form").reset();
+        
     });
-
+    
+    function showToast(toastId) {
+        let toast = document.getElementById(toastId);
+        toast.classList.remove("hidden"); // Show toast
+    
+        // Hide toast after 3 seconds
+        setTimeout(() => {
+            toast.classList.add("hidden");
+        }, 3000);
+    }
 const sideMenu = document.querySelector('#sideMenu');
 const navBar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul");
